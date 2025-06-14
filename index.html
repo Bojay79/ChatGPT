@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consistent Character Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consistent Character Prompt Generator</h1>
+        <div class="form-container">
+            <div class="form-column">
+                <label for="judul-scene">1. Judul Scene</label>
+                <input type="text" id="judul-scene" placeholder="Contoh: terminal bus malam/ suasana di coffetaria">
+
+                <label for="deskripsi-karakter">2. Deskripsi Karakter Inti</label>
+                <textarea id="deskripsi-karakter" rows="6" placeholder="Contoh: Seorang vlogger wanita muda asal Minang berusia 27 tahun..."></textarea>
+
+                <label for="aksi-karakter">3. Aksi Karakter</label>
+                <textarea id="aksi-karakter" rows="3" placeholder="Contoh: berjalan di sekitar terminal bus malam..."></textarea>
+
+                <label for="ekspresi-karakter">4. Ekspresi Karakter</label>
+                <textarea id="ekspresi-karakter" rows="3" placeholder="Contoh: Karakter menunjukkan ekspresi kagum dan antusias..."></textarea>
+            </div>
+            <div class="form-column">
+                <label for="latar-tempat-waktu">5. Latar Tempat & Waktu</label>
+                <textarea id="latar-tempat-waktu" rows="4" placeholder="Contoh: latar tempat: di terminal bus antar kota malam hari..."></textarea>
+
+                <label for="detail-visual">6. Detail Visual Tambahan</label>
+                <textarea id="detail-visual" rows="3" placeholder="Contoh: Pencahayaan: natural dari lampu jalan..."></textarea>
+
+                <label for="suasana">7. Suasana Keseluruhan</label>
+                <textarea id="suasana" rows="3" placeholder="Contoh: Suasana sibuk, ramai, dengan kesan perjalanan malam..."></textarea>
+
+                <label for="negative-prompt">8. Negative Prompt</label>
+                <textarea id="negative-prompt" rows="3" placeholder="Contoh: Hindari: anggota badan cacat, tangan tidak normal..."></textarea>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="generate-prompt">Generate Prompt</button>
+        </div>
+        <div class="result-container">
+            <div class="result-column">
+                <h2>Prompt (Bahasa Indonesia)</h2>
+                <textarea id="prompt-indonesia" rows="15"></textarea>
+            </div>
+            <div class="result-column">
+                <h2>Prompt (English)</h2>
+                <textarea id="prompt-english" rows="15" readonly></textarea>
+            </div>
+        </div>
+        <div class="change-style-container">
+            <h2>Prompt Untuk Ubah Style</h2>
+            <p>Tolong ganti stylenya</p>
+            <div id="style-prompt-output"></div>
+        </div>
+         <div class="story-buttons">
+            <button id="change-story">Ganti Cerita, Karakter, dan Lokasi</button>
+            <button id="next-scene">Buatkan Scene Berikutnya</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+</body>
+</html> 

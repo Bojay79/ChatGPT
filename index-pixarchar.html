@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Konsisten Karakter ChatGPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prompt Konsisten Karakter ChatGPT</h1>
+        <p>Masukkan atau edit prompt Bahasa Indonesia di bawah, lalu klik "Generate" untuk mendapatkan prompt Bahasa Inggris yang sudah dikembangkan dan sesuai struktur ChatGPT.</p>
+        <div class="result-container">
+            <div class="result-column">
+                <h2>Prompt (Bahasa Indonesia, Bisa Diedit)</h2>
+                <textarea id="prompt-indo" rows="18" placeholder="Masukkan atau edit prompt Bahasa Indonesia di sini. Prompt akan dikembangkan dan diterjemahkan otomatis."></textarea>
+            </div>
+            <div class="result-column">
+                <h2>Prompt (English, Final, Tidak Bisa Diedit)</h2>
+                <textarea id="prompt-eng" rows="18" readonly placeholder="Prompt Bahasa Inggris hasil akhir akan muncul di sini. Kolom ini tidak bisa diedit."></textarea>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="generate-pixarchar">Generate</button>
+        </div>
+        <div id="loading-indicator" class="hidden">
+            <span class="spinner"></span> Generating English prompt...
+        </div>
+        <div style="margin-top:30px;">
+            <h3>Contoh Prompt (Bahasa Indonesia):</h3>
+            <pre style="background:#f8f9fa;padding:10px;border-radius:4px;white-space:pre-wrap;">
+Tentu, ini adalah prompt dwibahasa untuk ChatGPT berdasarkan permintaan Anda:
+
+Bahasa Indonesia:
+Hasilkan deskripsi rinci untuk figur aksi 3D koleksi, yang dirender dalam gaya animasi Pixar yang penuh warna dan menawan. Figur ini didasarkan pada orang yang digambarkan dalam gambar yang diunggah, menangkap kemiripan mereka melalui lensa Pixar. Fokus pada elemen-elemen berikut untuk menciptakan deskripsi yang estetik:
+* Desain Visual: Jelaskan bentuk tubuh dan proporsi figur secara keseluruhan dengan gaya Pixar yang khas, ramah, dan ter-stylize. Berikan perhatian khusus pada penggambaran kemeja batik yang rumit – bagaimana Pixar akan menyederhanakan dan men-stylize pola yang kompleks ini sambil tetap mempertahankan kekayaan dan warnanya? Jelaskan tekstur dan jatuhnya kain.
+* Kepala & Ekspresi: Jelaskan wajahnya, termasuk kepala botak, janggut pendek, dan yang terpenting, senyum hangat yang ramah dan ekspresi mudah didekati seperti yang terlihat di gambar. Mata khas Pixar seperti apa yang dimiliki karakter ini?
+* Pose: Jelaskan posenya, berdasarkan posisi lengan bersilang seperti di gambar. Bagaimana pose ini akan diterjemahkan menjadi pose figur aksi yang dinamis namun tetap khas?
+* Elemen Unik: Tekankan gelang manik-manik yang khas di pergelangan tangan.
+* Kualitas Estetik / Koleksi: Jelaskan figur ini sedemikian rupa untuk menonjolkan daya tarik estetiknya dan nilai koleksinya, seolah-olah ini adalah barang dagangan berkualitas tinggi. Gunakan bahasa yang menggambarkan keahlian dan daya tarik visual yang akan membuatnya menjadi barang koleksi yang diinginkan.
+            </pre>
+        </div>
+    </div>
+    <script src="script-pixarchar.js"></script>
+</body>
+</html> 
